@@ -57,7 +57,7 @@ const PrizeGiftComponent = ({
                   navigate(`/contest/${contestId}/phase/${phaseId}`)
                 }
               >
-                Result Declared on {formatDate(endDate)}
+                Result on {formatDate(endDate)}
               </Button>
             )}
           </div>

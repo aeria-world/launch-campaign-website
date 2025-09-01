@@ -1,18 +1,21 @@
 /* Root font-size scaling */
 html {
-  font-size: 16px; /* Desktop default */
+  font-size: 16px;
+  /* Desktop default */
 
 }
 
 @media (max-width: 768px) {
   html {
-    font-size: 12px; /* Tablet */
+    font-size: 12px;
+    /* Tablet */
   }
 }
 
 @media (max-width: 480px) {
   html {
-    font-size: 10px; /* Mobile */
+    font-size: 10px;
+    /* Mobile */
   }
 }
 
@@ -21,7 +24,7 @@ body {
   font-family: 'Onest';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+
 }
 
 code {
@@ -32,14 +35,15 @@ code {
   position: relative;
   background-color: #0f0f0f;
   color: #fff;
-  min-height: 100dvh;       /* better vh on mobile */
+  min-height: 100dvh;
+  /* better vh on mobile */
   display: block;
-  overflow: clip;           
+  overflow: clip;
 }
 
 
 /* keep your content above the BG */
-.reward-container > * {
+.reward-container>* {
   position: relative;
   z-index: 1;
 }
@@ -54,7 +58,7 @@ code {
   background: transparent;
   margin: 1.2rem;
   text-align: center;
-  overflow: visible; 
+  overflow: visible;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -65,8 +69,10 @@ code {
   position: absolute;
   inset: 0;
   background: url("./assets/Glow.svg") no-repeat;
-  background-size: 60rem 60rem;        /* tweak */
-  background-position: center -8rem;    /* glow a bit higher */
+  background-size: 60rem 60rem;
+  /* tweak */
+  background-position: center -8rem;
+  /* glow a bit higher */
   pointer-events: none;
   z-index: 0;
 }
@@ -77,12 +83,13 @@ code {
   position: absolute;
   inset: 0;
   background: url("./assets/Curve.svg") no-repeat;
-  background-size:100% 20.4rem;
-  background-position: 1rem 10rem;        
-  opacity: 0.8;                      
+  background-size: 100% 20.4rem;
+  background-position: 1rem 10rem;
+  opacity: 0.8;
   pointer-events: none;
-  z-index: 1;                           
+  z-index: 1;
 }
+
 .reward-section>* {
   position: relative;
   z-index: 2;
@@ -98,37 +105,47 @@ code {
 
 /* Won Text */
 .won-text {
-  font-size: 2rem; /* 18px */
+  font-size: 2rem;
+  /* 18px */
   font-weight: 500;
   color: #F5EAF0;
-  margin: 0 0 1.6rem; /* 10px */
+  margin: 0 0 1.6rem;
+  /* 10px */
 }
 
 /* Prize Card */
 .prize-card {
   background-color: #2a2a2a;
-  border-radius: 1rem; /* 16px */
-  padding: 1.6rem; /* 20px */
-  margin: 0.625rem auto 1.6rem; /* 10px auto 24px */
+  border-radius: 1rem;
+  /* 16px */
+  padding: 1.6rem;
+  /* 20px */
+  margin: 0.625rem auto 1.6rem;
+  /* 10px auto 24px */
   color: #fff;
-  box-shadow: 0 0 0.75rem rgba(255, 215, 130, 0.1); /* 12px */
+  box-shadow: 0 0 0.75rem rgba(255, 215, 130, 0.1);
+  /* 12px */
   width: 100%;
   max-width: 38rem;
 }
 
 .worth-text {
-  font-size: 1.6rem; /* 16px */
+  font-size: 1.6rem;
+  /* 16px */
   font-family: 'Onest';
 }
 
 .divider {
   border: none;
-  border-top: 0.0625rem solid #ffffff; /* 1px */
-  margin: 1.2rem 0; /* 12px */
+  border-top: 0.0625rem solid #ffffff;
+  /* 1px */
+  margin: 1.2rem 0;
+  /* 12px */
 }
 
 .description-text {
-  font-size: 1.4rem; /* 13px */
+  font-size: 1.4rem;
+  /* 13px */
   color: #bbbbbb;
   line-height: 1.5;
   margin: 0;
@@ -139,25 +156,29 @@ code {
   display: flex;
   justify-content: center;
   gap: 0;
-  margin:0 auto 2.4rem;
-  border: 1px solid #E4E7EC1A; /* 1px */
+  margin: 0 auto 2.4rem;
+  border: 1px solid #E4E7EC1A;
+  /* 1px */
   border-radius: 1rem;
   overflow: hidden;
   height: 4.4rem;
-  background-color:#FFFFFF1A;
+  background-color: #FFFFFF1A;
   padding: 0.4rem;
+  width: 100%;
+  max-width: 38rem;
 }
 
 .tab-btn {
   flex: 1;
   color: #fff;
   border: none;
-   background: transparent;  
-  padding: 0.625rem 1.25rem; /* 10px 20px */
+  background: transparent;
+  /* padding: 0.625rem 1.25rem; */
+  /* 10px 20px */
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .tab-btn:hover {
@@ -177,16 +198,22 @@ code {
   color: #FFFFFFBF;
   font-family: 'Onest';
   font-weight: 400;
+  width: 100%;
+  max-width: 38rem;
+  justify-content: center;
+  margin: auto;
 }
 
 .instructions ol {
-  padding-left: 1.25rem; /* 20px */
+  padding-left: 1.25rem;
+  /* 20px */
   margin: 0;
 }
 
 /* BetterLuck Next Time */
 .betterLuckNextTimeHeading {
-  font-size: 1.8rem; /* 24px */
+  font-size: 1.8rem;
+  /* 24px */
   line-height: 140%;
   font-weight: 400;
   margin: -1.2rem 0 4rem 0;
@@ -194,10 +221,12 @@ code {
 
 /* Congrats Text */
 .congrats-text {
-  font-size: 3.2rem; /* 32px */
+  font-size: 3.2rem;
+  /* 32px */
   font-weight: 600;
   color: #BFA065;
-  margin-bottom: 1.25rem; /* 20px */
+  margin-bottom: 1.25rem;
+  /* 20px */
   line-height: 1.2;
   font-family: 'Onest';
   background: linear-gradient(135deg, #E6C587 0%, #BFA065 100%);
@@ -207,8 +236,9 @@ code {
 }
 
 .prize-image {
-  width: 12.5rem; /* 200px */
-  margin: 1.25rem 0; /* 20px */
+  width: 4.3114rem;
+  height: 5rem;
+  margin: 1.25rem 0;
 }
 
 .prize-title {
@@ -217,13 +247,16 @@ code {
   margin: 0;
   color: #ffffff;
   font-family: 'Onest';
+  justify-content: center;
 }
 
 .btn-group {
   display: flex;
   justify-content: center;
-  gap: 0.625rem; /* 10px */
-  margin-bottom: 1.25rem; /* 20px */
+  gap: 0.625rem;
+  /* 10px */
+  margin-bottom: 1.25rem;
+  /* 20px */
 }
 
 .avail-btn {
@@ -239,25 +272,32 @@ code {
 
 .instructions {
   text-align: left;
-  font-size: 1.4rem; /* 14px */
+  font-size: 1.4rem;
+  /* 14px */
   color: #dddddd;
 }
 
 .instructions ol {
-  padding-left: 1.25rem; /* 20px */
+  padding-left: 1.25rem;
+  /* 20px */
 }
 
 .div404 {
-  border: 0.125rem inset #dee2e6; /* 2px */
-  padding: 3.75rem; /* 60px */
-  border-radius: 1.25rem; /* 20px */
+  border: 0.125rem inset #dee2e6;
+  /* 2px */
+  padding: 3.75rem;
+  /* 60px */
+  border-radius: 1.25rem;
+  /* 20px */
   background-color: #eee5ffb0;
-  box-shadow: 0 0 1.25rem 0.0625rem rgba(135, 22, 173, 0.5); /* 20px 1px */
+  box-shadow: 0 0 1.25rem 0.0625rem rgba(135, 22, 173, 0.5);
+  /* 20px 1px */
 }
 
 .redemption-code {
   font-weight: 500;
-  font-size: 1.4rem; /* 14px */
+  font-size: 1.4rem;
+  /* 14px */
   font-family: 'Onest';
   color: #F5EAF0;
   margin-bottom: 4rem;
@@ -265,17 +305,17 @@ code {
 
 .jackpot-banner {
   padding: 1.2rem 1.6rem;
-  border-radius: 1.25rem; 
+  border-radius: 1.25rem;
   overflow: hidden;
   height: 11.7rem;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
   position: relative;
-   margin: 0 auto 4rem;
-   width: 100%;
+  margin: 0 auto 4rem;
+  width: 100%;
   max-width: 38rem;
 }
 
-.jackpot-wrapper{
+.jackpot-wrapper {
   display: flex;
   flex-direction: row;
 
@@ -293,18 +333,23 @@ code {
 }
 
 .jackpot-subtitle {
-  font-size: 1.4rem; /* 18px */
+  font-size: 1.4rem;
+  /* 18px */
   font-weight: 400;
   opacity: 0.9;
-  margin: 0; /* 8px */
-  letter-spacing: 0.03125rem; /* 0.5px */
+  margin: 0;
+  /* 8px */
+  letter-spacing: 0.03125rem;
+  /* 0.5px */
 }
 
 .jackpot-title {
-  font-size: 1.6rem; /* 28px */
+  font-size: 1.6rem;
+  /* 28px */
   font-weight: 700;
   line-height: 1.2;
-  margin: 0 0 1.2rem; /* 20px */
+  margin: 0 0 1.2rem;
+  /* 20px */
   color: white;
 }
 
@@ -312,7 +357,7 @@ code {
   height: 2.4rem;
   border: none !important;
   font-size: 1rem;
-  font-weight : 600;
+  font-weight: 600;
   background: rgba(0, 0, 0, 0.8) !important;
   width: fit-content;
   padding: 0 1rem;
@@ -335,7 +380,8 @@ code {
   height: 12.2rem;
   object-fit: contain;
   aspect-ratio: 47/61;
-  filter: drop-shadow(0 0.25rem 1.25rem rgba(0, 0, 0, 0.3)); /* 4px 20px */
+  filter: drop-shadow(0 0.25rem 1.25rem rgba(0, 0, 0, 0.3));
+  /* 4px 20px */
 }
 
 .jackpot-container {
@@ -343,6 +389,7 @@ code {
   justify-items: center;
   width: 100%;
 }
+
 .success-jackpot-img {
   width: 9rem !important;
   height: 8.8rem !important;
@@ -359,9 +406,9 @@ code {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items:center;
-  gap: 0;                  
-  padding: 0;  
+  align-items: center;
+  gap: 0;
+  padding: 0;
   max-width: 30rem;
 }
 
@@ -378,9 +425,29 @@ code {
 
 .prize-info {
   display: flex;
+  align-items: center;
+  gap: 1.6rem;
 }
 
 .text-start {
   font-size: 1.6rem;
   font-weight: 600;
+}
+
+.prize-tnc-heading {
+  width: 100%;
+  max-width: 38rem;
+  justify-content: center;
+  margin: auto;
+}
+
+.prize-tnc-instructions {
+  width: 100%;
+  max-width: 38rem;
+  justify-content: center;
+  margin: auto;
+}
+
+.prize-details {
+  text-align: left;
 }

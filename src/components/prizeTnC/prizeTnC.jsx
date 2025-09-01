@@ -1,4 +1,4 @@
-import { Col, Row } from "reactstrap";
+import { Col } from "reactstrap";
 
 const PrizeTermsAndConditionsComponent = ({ endDate }) => {
     const formatDate = (dateInput) => {
@@ -13,12 +13,12 @@ const PrizeTermsAndConditionsComponent = ({ endDate }) => {
 
     return (
         <>
-            <Row>
+            <div className="prize-tnc-heading">
                 <Col className="text-start">
                     Terms & Conditions
                 </Col>
-            </Row>
-            <Row>
+            </div>
+            <div className="prize-tnc-instructions">
                 <div className="instructions">
                     <ol>
                         <li>
@@ -38,7 +38,7 @@ const PrizeTermsAndConditionsComponent = ({ endDate }) => {
                         </li>
                     </ol>
                 </div>
-            </Row>
+            </div>
         </>
     )
 }
