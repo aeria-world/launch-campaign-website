@@ -8,7 +8,7 @@ const JackPotWon = ({ contestId, phaseInfo, enrollmentGiftPrize }) => {
                 <div className="reward-box">
                     <UserHeaderComponent customerName={phaseInfo.customerName} />
 
-                    <ImageSectionComponent imageUrl={enrollmentGiftPrize?.prize?.product?.image[0]?.url || phaseInfo?.prizeInfo?.product?.image[0]?.url} headingText="Congratulations!" headingText2="Jackpot Win" />
+                    <ImageSectionComponent imageUrl={enrollmentGiftPrize?.prize?.product?.image[0]?.url || phaseInfo?.prizeInfo?.product?.image[0]?.url} headingText="Congratulations!" headingText2="Jackpot Win" customImageClassName="wonConfetti" />
 
                     <p className="won-text">You've won a</p>
 

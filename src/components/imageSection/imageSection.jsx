@@ -11,6 +11,7 @@ const ImageSectionComponent = ({
   endDate,
   isBetterLuck = false,
   customClassName = "",
+  customImageClassName = ""
 }) => {
   const formatDate = (dateInput) => {
     const date = new Date(dateInput);
@@ -63,11 +64,11 @@ const ImageSectionComponent = ({
           isBetterLuck
             ? "/emptyGiftBox.svg"
             : imageUrl?.includes("media.strapiapp.com")
-            ? imageUrl
-            : `${baseUrl}${imageUrl}`
+              ? imageUrl
+              : `${baseUrl}${imageUrl}`
         }
         alt="reward-image"
-        className="reward-image"
+        className={`reward-image ${customImageClassName}`}
       />
     </div>
   );
