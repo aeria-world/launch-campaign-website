@@ -59,18 +59,39 @@ const ImageSectionComponent = ({
         </>
       )}
 
-      <img
-        src={
-          isBetterLuck
-            ? "/emptyGiftBox.svg"
-            : imageUrl?.includes("media.strapiapp.com")
-              ? imageUrl
-              : `${baseUrl}${imageUrl}`
-        }
-        alt="reward-image"
-        className={`reward-image ${customImageClassName}`}
-      />
-    </div>
+      {(customImageClassName !== "") ? (
+        <>
+          <div className="wonConfetti">
+            <img
+              src={
+                isBetterLuck
+                  ? "/emptyGiftBox.svg"
+                  : imageUrl?.includes("media.strapiapp.com")
+                    ? imageUrl
+                    : `${baseUrl}${imageUrl}`
+              }
+              alt="reward-image"
+              className="reward-image"
+            />
+          </div>
+        </>
+      ) : (
+        <>
+          <img
+            src={
+              isBetterLuck
+                ? "/emptyGiftBox.svg"
+                : imageUrl?.includes("media.strapiapp.com")
+                  ? imageUrl
+                  : `${baseUrl}${imageUrl}`
+            }
+            alt="reward-image"
+            className="reward-image"
+          />
+        </>
+      )}
+
+    </div >
   );
 };
 

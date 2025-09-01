@@ -101,6 +101,8 @@ code {
   height: 21.7rem;
   margin: 1.6rem auto;
   display: block;
+  z-index: 2;
+  position: relative;
 }
 
 /* Won Text */
@@ -423,10 +425,25 @@ code {
   content: none !important;
 }
 
-.reward-image.wonConfetti {
-  background: url("./assets/wonConfetti.gif") no-repeat;
-  background-size: 100% 100%;
-  z-index: 2;
+.wonConfetti {
+  position: relative;
+  z-index: 20;
+}
+
+.wonConfetti::after {
+  content: "";
+  position: absolute;
+  top: -5rem;
+  left: -6rem;
+  right: 0;
+  bottom: 0;
+  background: url('./assets/wonConfetti.gif') no-repeat;
+  background-size: 50% 50%;
+  background-position: center;
+  z-index: 10;
+  pointer-events: none;
+  height: 20rem;
+  width: 33rem;
 }
 
 .prize-info {
