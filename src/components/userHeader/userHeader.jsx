@@ -13,7 +13,7 @@ const UserHeaderComponent = ({ customerName }) => {
           />
         </div>
         <div className="welcome-text">
-          <div className="welcome-back">Welcome Back</div>
+          <div className="welcome-back">Welcome</div>
           <div className="user-name">{customerName}</div>
         </div>
       </div>
