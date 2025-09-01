@@ -29,8 +29,8 @@ const IsBetterLuckNextTime = ({ contestId, phaseInfo, enrollmentGift }) => {
               title="Mega Jackpot"
               prizeInfo={phaseInfo?.prizeInfo || {}}
               endDate={phaseInfo?.endDate || ""}
-              textBackgroundColor="#4F46E5"
-              imageBackgroundColor="#27218D"
+              textBackgroundColor="linear-gradient(100deg, #4F46E5 0%, #27218D 100%)"
+              imageBackgroundColor="rgba(255, 255, 255, 0.20)"
               phaseId={phaseInfo.phaseId}
               isEnrollment={true}
               enrollmentGift={enrollmentGift}

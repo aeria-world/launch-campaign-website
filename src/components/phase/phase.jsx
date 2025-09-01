@@ -49,7 +49,7 @@ const PhaseEnrollmentComponent = () => {
                     })
                     setEnrollmentGift(response?.data?.data?.enrollmentGift)
                     setIsBetterLuck(!!response?.data?.data?.enrollmentGift?.prize?.product?.isBetterLuck)
-                    setIsEnrollmentGiftAvailable(!!response?.data?.data?.enrollmentGift?.gift && response?.data?.data?.enrollmentGift?.gift?.documentId!=="")
+                    setIsEnrollmentGiftAvailable(!!response?.data?.data?.enrollmentGift?.gift && response?.data?.data?.enrollmentGift?.gift?.documentId !== "")
                 }
             } catch (error) {
                 navigate("/error", {
@@ -85,7 +85,7 @@ const PhaseEnrollmentComponent = () => {
 
                     <DescriptionComponent isList={true} title="Prizes" prizeList={phase.prizes} />
 
-                    {(phase?.prizes?.length && isEnrollmentGiftAvailable) ? <PrizeGiftComponent contestId={contestId} title="Enrollment Gift" textBackgroundColor="#D1AA61" imageBackgroundColor="#816632" isEnrollment={true} enrollmentGift={enrollmentGift} /> : null}
+                    {(phase?.prizes?.length && isEnrollmentGiftAvailable) ? <PrizeGiftComponent contestId={contestId} title="Enrollment Gift" textBackgroundColor="linear-gradient(100deg, #D1AA61 0%, #816632 100%)" imageBackgroundColor="rgba(255, 255, 255, 0.20)" isEnrollment={true} enrollmentGift={enrollmentGift} /> : null}
 
                     <PrizeTermsAndConditionsComponent endDate={phase.endDate} />
                 </div>

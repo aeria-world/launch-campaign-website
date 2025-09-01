@@ -212,6 +212,10 @@ code {
   margin: 0;
 }
 
+.instructions ol li {
+  color: #FFFFFFBF
+}
+
 /* BetterLuck Next Time */
 .betterLuckNextTimeHeading {
   font-size: 1.8rem;
@@ -238,7 +242,7 @@ code {
 }
 
 .prize-image {
-  width: 4.3114rem;
+  width: 3.8393rem;
   height: 5rem;
   margin: 1.25rem 0;
 }
@@ -473,4 +477,12 @@ code {
 
 .prize-details {
   text-align: left;
+}
+
+.prize-name {
+  font-size: 1.6rem;
+}
+
+.prize-worth {
+  font-size: 1.4rem;
 }

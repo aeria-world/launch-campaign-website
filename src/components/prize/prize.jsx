@@ -30,7 +30,7 @@ const PrizeGiftComponent = ({
     <>
       <div
         className="jackpot-banner"
-        style={{ backgroundColor: textBackgroundColor }}
+        style={{ background: textBackgroundColor }}
       >
         <div className="jackpot-wrapper">
           {/* Left Section */}
@@ -65,7 +65,7 @@ const PrizeGiftComponent = ({
           {/* Right Section */}
           <div
             className="jackpot-image"
-            style={{ backgroundColor: imageBackgroundColor }}
+            style={{ background: imageBackgroundColor }}
           >
             {isEnrollment ? (
               <img

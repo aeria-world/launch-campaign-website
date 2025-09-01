@@ -133,8 +133,8 @@ const GiftComponent = () => {
             title="Mega Jackpot"
             prizeInfo={gift?.jackPotPrize || {}}
             endDate={gift.phaseEndDate}
-            textBackgroundColor="#4F46E5"
-            imageBackgroundColor="#27218D"
+            textBackgroundColor="linear-gradient(100deg, #4F46E5 0%, #27218D 100%)"
+            imageBackgroundColor="rgba(255, 255, 255, 0.20)"
             phaseId={gift.phaseId}
             isPrizeWon={gift?.isPrizeWon}
           />
