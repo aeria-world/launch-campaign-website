@@ -49,7 +49,7 @@ const PhaseEnrollmentComponent = () => {
                     })
                     setEnrollmentGift(response?.data?.data?.enrollmentGift)
                     setIsBetterLuck(!!response?.data?.data?.enrollmentGift?.prize?.product?.isBetterLuck)
-                    setIsEnrollmentGiftAvailable(!!response?.data?.data?.enrollmentGift?.gift)
+                    setIsEnrollmentGiftAvailable(!!response?.data?.data?.enrollmentGift?.gift && response?.data?.data?.enrollmentGift?.gift?.documentId!=="")
                 }
             } catch (error) {
                 navigate("/error", {
