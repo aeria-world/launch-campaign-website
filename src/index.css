@@ -132,8 +132,7 @@ code {
 }
 
 .worth-text {
-  font-size: 1.6rem;
-  /* 16px */
+  font-size: 1.8rem;
   font-family: 'Onest';
 }
 
@@ -248,7 +247,7 @@ code {
 }
 
 .prize-title {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   font-weight: 700;
   margin: 0;
   color: #ffffff;
@@ -399,6 +398,8 @@ code {
 .success-jackpot-img {
   width: 9rem !important;
   height: 8.8rem !important;
+  position: absolute;
+  left: -2rem;
 }
 
 .congrats-text-jackpot {
