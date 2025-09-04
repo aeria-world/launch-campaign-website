@@ -31,6 +31,13 @@ html {
     height: 3.2rem;
     border-radius: 50%;
     object-fit: cover;
+    background-color: #f6e9d2;
+    color: #ba9859;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.5rem;
     box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2);
     /* 2px 8px */
 }
@@ -64,3 +71,5 @@ html {
     gap: 0.8rem;
 
 }
+
+

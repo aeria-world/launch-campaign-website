@@ -5,12 +5,13 @@ const UserHeaderComponent = ({ customerName }) => {
   return (
     <div className="welcome-back-header">
       <div className="profile-section">
-        <div className="profile-image-container">
-          <img
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face"
+        <div className="profile-image">
+          {/* <img
+            src=""
             alt="Profile"
             className="profile-image"
-          />
+          /> */}
+          {customerName?.[0] || "-"}
         </div>
         <div className="welcome-text">
           <div className="welcome-back">Welcome</div>
